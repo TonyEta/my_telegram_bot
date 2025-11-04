@@ -27,7 +27,7 @@ async def cmd_random(callback: CallbackQuery):
 async def cmd_talk(callback: CallbackQuery):
     photo = FSInputFile("content/pictures/talk-picture.jpg")
     await callback.message.answer_photo(photo=photo)
-    await callback.message.answer(text="Тут буде діалог з відомою особистістю",
+    await callback.message.answer(text="Діалог з відомою особистістю",
         reply_markup=talk_keyboard)
 
 
@@ -43,7 +43,7 @@ async def cmd_gpt(callback: CallbackQuery, state: FSMContext):
 async def cmd_leisure(callback: CallbackQuery):
     photo = FSInputFile("content/pictures/leisure-picture.jpg")
     await callback.message.answer_photo(photo=photo)
-    await callback.message.answer(text="Тут буде рекомендація по вибору фільма",
+    await callback.message.answer(text="Рекомендації по дозвіллю",
         reply_markup=leisure_keyboard)
 
 
